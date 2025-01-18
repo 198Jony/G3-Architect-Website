@@ -7,6 +7,11 @@
   font-style: normal;
 }
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 /* Shred Styles*/
 .display-flex{
     display: flex;
@@ -14,6 +19,7 @@
 
 .header-bg{
     background: rgba(245, 203, 154, 0.959);
+    padding-top: 50px;
 }
 
 .txt-gray{
@@ -30,6 +36,7 @@
 .navbar{
     justify-content: space-between;
     align-items: center;
+   
     
 }
 .navbar-title{
@@ -75,6 +82,7 @@
     font-weight: 700;
     line-height: 75px;
     letter-spacing: 0%;
+    margin-top: 100px;
     
 }
 
@@ -85,6 +93,7 @@
     font-weight: 400;
     line-height: 26px;
     letter-spacing: 0%;
+    margin-top: 24px;
    
 }
 
@@ -100,6 +109,7 @@
     text-align: center;
     padding: 20px 25px;
     border: none;
+    margin-top: 24px;
 }
 
 .banner-img{
@@ -153,15 +163,90 @@
     line-height: 26px;
     letter-spacing: 0%;
     margin-bottom: 32px;
+    margin-top: 24px;
 
 }
 
+/* Some facts section style */
+
+.some-facts{
+    max-width: 80%;
+    margin: 120px auto 0;
+}
+
+.fact-title{
+    color: rgb(19, 19, 19);
+    font-family: Work Sans;
+    font-size: 2.8rem;
+    font-weight: 700;
+    line-height: 53px;
+    letter-spacing: 0%;
+}
+
+.fact-description{
+    max-width:542px;
+    color: rgb(114, 114, 114);
+    font-family: Work Sans;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 26px;
+    margin-top: 24px;
+ 
+
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-top: 100px;
+}
+
+
+.card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 241.83px;
+    max-height: 241.83px;
+    border-radius: 8px;
+    text-align: center;
+    border: 1px solid rgb(255, 144, 14) ;
+}
+
+.card-img{
+    margin-top: 50px;
+}
+
+.card-number{
+    margin-top: 20px;
+    color: rgb(66, 66, 66);
+    font-family: Work Sans;
+    font-size: 2.8rem;
+    font-weight: 600;
+    line-height: 53px;
+    letter-spacing: 0%;
+
+}
+
+.card-description{
+    margin-top: 5px;
+    color: rgb(114, 114, 114);
+    font-family: Work Sans;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 23px;
+    letter-spacing: 0%;
+    margin-bottom: 50px;
+
+}
 /* Responsive media query*/
 @media screen and (max-width:576px){
     .navbar,.nav-links,.team-feature{
         flex-direction: column;
     }
-
+    
+    .nav-links{
+        margin-top: 24px;
+    }
     .teams{
         
         grid-template-columns: repeat(1,1fr);
@@ -171,5 +256,22 @@
        
         margin-left: 15px;
     }
+
+    .features-title{
+        
+        margin-top: 24px;
+       
+    }
     
+    .cards{
+        grid-template-columns: repeat(1,1fr);
+       
+    }
+
+    .card{
+        
+        max-width: 100%;
+        max-height: 100%;
+        margin-bottom: 24px;
+    }
 }
