@@ -112,6 +112,12 @@
     margin-top: 24px;
 }
 
+.btn-primary:hover{
+    color:rgb(255, 144, 14);
+    background-color: white;
+    border: 1px solid rgb(255, 144, 14);;
+}
+
 .banner-img{
     width:100%;
     margin-top: 50px;
