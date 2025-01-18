@@ -238,6 +238,71 @@
     margin-bottom: 50px;
 
 }
+
+/* bagdes style */
+
+.badge{
+    max-width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.badge-title{
+    color: rgb(19, 19, 19);
+    font-family: Work Sans;
+    font-size: 2.8rem;
+    font-weight: 700;
+    line-height: 53px;
+    letter-spacing: 0%;
+    margin-top:100px;
+   
+}
+
+.badge-description{
+    max-width:542px;
+    color: rgb(114, 114, 114);
+    font-family: Work Sans;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0%;
+    margin: 24px auto 0;
+    
+}
+
+.badges{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    column-gap: 50px;
+    margin-top: 50px;
+}
+
+.badge-img{
+    width:100%;
+    height:100%;
+}
+
+/* footer */
+
+.footer{
+    max-width:80%;
+    margin: 0 auto;
+    text-align: center;
+    background: rgba(245, 203, 154, 0.959);
+    padding: 40px;
+    border-radius: 8px;
+    margin-top: 100px;
+}
+
+.footer-title{
+    color: rgb(66, 66, 66);
+    font-family: Work Sans;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0%;
+    
+}
 /* Responsive media query*/
 @media screen and (max-width:576px){
     .navbar,.nav-links,.team-feature{
@@ -273,5 +338,10 @@
         max-width: 100%;
         max-height: 100%;
         margin-bottom: 24px;
+    }
+    .badges{
+        
+        grid-template-columns:1fr;
+        row-gap: 100px;
     }
 }
